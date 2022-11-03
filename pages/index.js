@@ -1,6 +1,5 @@
 import { ThemeConsumer } from "styled-components";
 import useSWR from "swr";
-import handler from "./api/jokes";
 import styled from "styled-components";
 
 export default function Home() {
