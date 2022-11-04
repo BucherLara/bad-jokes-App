@@ -1,6 +1,6 @@
-import { ThemeConsumer } from "styled-components";
 import useSWR from "swr";
 import styled from "styled-components";
+import Link from "next/link";
 
 export default function Home() {
   const { data, error } = useSWR("/api/jokes", fetcher);
@@ -20,6 +20,7 @@ export default function Home() {
           </StyledSection>
         );
       })}
+      <Link href={"/newJoke"}>Create funny new Jokes</Link>
     </div>
   );
 
